@@ -1,4 +1,4 @@
-# openim
+# openIM
 
 an open source IM (instance message) system
 
