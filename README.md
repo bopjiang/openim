@@ -4,38 +4,54 @@ an open source IM (instance message) system
 
 
 ## Architecture
-![openIM architecture](http://i1.piimg.com/4851/af516f10b57324f0.png "openIM architecture")
+![openIM architecture](http://i4.buimg.com/573902/4b6715129b0dc21e.png "openIM architecture")
 
 ## Modules
 
 ### Connection/Access Layer
+
 #### TCPConncetor
+openIM binary protocol client
 #### UDPConncetor
+openIM binary protocol client
+
 #### XMPPConncetor
+standard XMPP client
+
 #### MQTTConncetor
+standard MQTT client
+
 #### WSConncetor
-support websocket client
+websocket client using openIM binary protocol
 
 #### HTTP2Conncetor
+HTTP2 client using openIM binary protocol
+
 
 ### Disctribute Layer
 #### Router
 * route logic message by message type
-* maintain location database of all clients, is a distributed kv store cluster
+* maintain location database of all clients, a distributed kv store cluster
 
-### Logic Layer
-#### Message
-dispatch client message, and save message when client not online
+#### Messenger
+dispatch client message to each single user, and save the message when client not online
 
 #### PushProxy
 * maintain remote push token(APNs, Google token)
 * push message to remote push service (APNs, GCM)
 
+#### GroupMan
+handle group message distribution
+
+#### XMPPGateway
+implement XMPP Server2Server(s2s) protocol
+
 ### Data Layer
 #### DBProxy
 database proxy, support API to access database
+
 #### Database
-supported Database list:
+database to be supported:
 * Redis
 * MySQL
 * PostgreSQL
