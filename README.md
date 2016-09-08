@@ -1,6 +1,6 @@
 # openIM
 
-an open source IM (instance message) system
+an open source IM (instance message) system.
 
 
 ## Architecture
@@ -35,7 +35,7 @@ HTTP2 client using openIM binary protocol
 * maintain location database of all clients, a distributed kv store cluster
 
 #### Messenger
-dispatch client message to each single user, and save the message when client not online
+dispatch client message to each single user, and save the message when client is offline
 
 #### PushProxy
 * maintain remote push token(APNs, Google token)
@@ -49,7 +49,7 @@ implement XMPP Server2Server(s2s) protocol
 
 ### Data Layer
 #### DBProxy
-database proxy, support API to access database
+database proxy, provide API to access database
 
 #### Database
 database to be supported:
