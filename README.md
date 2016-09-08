@@ -8,23 +8,24 @@ an open source IM (instance message) system
 
 ## Modules
 
-### Connection/Access Layer
+### Connection Layer
 
-#### TCPConncetor
-openIM binary protocol client
-#### UDPConncetor
+#### TCPConnector
 openIM binary protocol client
 
-#### XMPPConncetor
+#### UDPConnec/tor
+openIM binary protocol client
+
+#### XMPPConnector
 standard XMPP client
 
-#### MQTTConncetor
+#### MQTTConnector
 standard MQTT client
 
-#### WSConncetor
+#### WSConnector
 websocket client using openIM binary protocol
 
-#### HTTP2Conncetor
+#### HTTP2Connector
 HTTP2 client using openIM binary protocol
 
 
