@@ -1,7 +1,7 @@
 # openIM
 
 
-![Build Status](https://travis-ci.org/openim/openim.svg?branch=master)](https://travis-ci.org/openim/openim) [![Coverage Status](https://coveralls.io/repos/github/openim/openim/badge.svg?branch=master)](https://coveralls.io/github/openim/openim?branch=master)
+[![Build Status](https://travis-ci.org/openim/openim.svg?branch=master)](https://travis-ci.org/openim/openim) [![Coverage Status](https://coveralls.io/repos/github/openim/openim/badge.svg?branch=master)](https://coveralls.io/github/openim/openim?branch=master)
 
 
 
