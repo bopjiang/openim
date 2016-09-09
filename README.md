@@ -1,11 +1,10 @@
 # openIM
 
 
-[![Build Status](https://travis-ci.org/openim/openim.svg?branch=master)](https://travis-ci.org/openim/openim) [![Coverage Status](https://coveralls.io/repos/github/openim/openim/badge.svg?branch=master)](https://coveralls.io/github/openim/openim?branch=master)
+[![Build Status](https://travis-ci.org/openim/openim.svg?branch=master)](https://travis-ci.org/openim/openim) [![Coverage Status](https://coveralls.io/repos/github/openim/openim/badge.svg?branch=master)](https://coveralls.io/github/openim/openim?branch=master)[![Go Report Card](https://goreportcard.com/badge/github.com/openim/openim)](https://goreportcard.com/report/github.com/openim/openim)
 
 
-
-an open source IM (instance message) system. 
+an open source IM (instance message) system.
 We are using slack to discuss projects. Find us at: https://openim.slack.com/
 
 
