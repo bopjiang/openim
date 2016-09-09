@@ -1,0 +1,21 @@
+language: go
+go:
+  - 1.7.1
+  - tip
+env:
+  - GOARCH=amd64
+  - GOARCH=arm
+  - GOARCH=arm64
+  - GOARCH=386
+branches:
+  only:
+  - master
+sudo: false
+before_install:
+  - go get github.com/mattn/goveralls
+script:
+  - go install github.com/goim/goim/...
+  - ./test.sh
+  - ./coverage.sh --coveralls
+notifications:
+  email: false

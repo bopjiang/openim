@@ -1,5 +1,10 @@
 # openIM
 
+
+![Build Status](https://travis-ci.org/openim/openim.svg?branch=master)](https://travis-ci.org/openim/openim) [![Coverage Status](https://coveralls.io/repos/github/openim/openim/badge.svg?branch=master)](https://coveralls.io/github/openim/openim?branch=master)
+
+
+
 an open source IM (instance message) system. 
 We are using slack to discuss projects. Find us at: https://openim.slack.com/
 
