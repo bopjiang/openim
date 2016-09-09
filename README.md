@@ -1,6 +1,7 @@
 # openIM
 
-an open source IM (instance message) system.
+an open source IM (instance message) system. 
+We are using slack to discuss projects. Find us at: https://openim.slack.com/
 
 
 ## Architecture
