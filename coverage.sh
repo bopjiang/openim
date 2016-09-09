@@ -39,7 +39,7 @@ show_csv_report() {
 
 push_to_coveralls() {
     echo "Pushing coverage statistics to coveralls.io"
-    $HOME/gopath/bin/goveralls -coverprofile="$profile" -service=travis-ci "
+    $GOPATH/bin/goveralls -coverprofile="$profile" -service=travis-ci 
 }
 
 generate_cover_data $(go list ./...)
