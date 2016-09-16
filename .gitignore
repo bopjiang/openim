@@ -30,3 +30,6 @@ _testmain.go
 docs/_build/
 *~
 *.pyc
+
+# IDEs
+.idea/
