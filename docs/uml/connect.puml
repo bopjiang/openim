@@ -1,0 +1,38 @@
+@startuml
+hide footbox
+
+
+participant "client" as C
+
+box "Non openIM system" #LightBlue
+	participant "AccountSystem" as AS
+end box
+
+participant "TokenGenerator" as TG
+participant "ConnectMan" as CM
+participant "TCPConnector" as TCPConnector
+participant "Router" as R
+
+
+
+C -->  AS: login with user name and password
+AS -> TG: request token with scope
+AS <- TG: token
+C <-- AS: token
+
+C --> CM: request conn addr list
+C <-- CM: conn addr list
+
+C -> TCPConnector: Protocol version
+C -> TCPConnector: IM authentication
+TCPConnector -> TG: check token
+TCPConnector <- TG: token valid
+
+C <- TCPConnector: authentication passed
+TCPConnector -> R: online event
+
+...
+C -> TCPConnector: heartbeat
+C <- TCPConnector: heartbeat ack
+
+@enduml
