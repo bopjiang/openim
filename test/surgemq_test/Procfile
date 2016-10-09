@@ -1,0 +1,2 @@
+mqtt-server: $GOPATH/bin/server
+# mqtt-client: $GOPATH/bin/server
