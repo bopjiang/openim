@@ -8,6 +8,16 @@
 an open source IM (instance message) system.
 We are using slack to discuss projects. Find us at: https://openim.slack.com/
 
+## Motivation
+* XMPP is complicated, may be we could simplify it.
+* Communication should be safe for everyone. Nobody could sniff the information content. The communication behavior (to whom you send message) should also be protected. 
+* Instance Message is just a channel for communication, could be used for man-man, machine-to-machine communicating.
+* Web should be open, not closed. IM is a part the Web.
+
+That's why we need an open source IM project, we provides server side and client side implementation. So everybody could build a IM cluster even in your living-room.
+
+The whole is an open, distributed, decentralized, XMPP-compatible, End-2-End encryption IM system.
+
 ## Develop Document
 
 * https://github.com/openim/openim/wiki
@@ -27,7 +37,7 @@ Wiki first. May move to readthedocs later when API is stable
 #### TCPConnector
 openIM binary protocol client
 
-#### UDPConnec/tor
+#### UDPConnector
 openIM binary protocol client
 
 #### XMPPConnector
@@ -43,7 +53,7 @@ websocket client using openIM binary protocol
 HTTP2 client using openIM binary protocol
 
 
-### Disctribute Layer
+### Distribution Layer
 #### Router
 * route logic message by message type
 * maintain location database of all clients, a distributed kv store cluster
@@ -70,7 +80,7 @@ database to be supported:
 * Redis
 * MySQL
 * PostgreSQL
-* ElasticSearch
+
 
 ## Contributing
 Contributions are welcomed and greatly appreciated. See [CONTRIBUTING.md](CONTRIBUTING.md)
